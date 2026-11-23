@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <clipPath id="pole"><rect x="22" y="12" width="20" height="40" rx="3"/></clipPath>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#14110d"/>
+  <g clip-path="url(#pole)">
+    <rect x="22" y="12" width="20" height="40" fill="#f1ebe0"/>
+    <polygon points="22,10 42,-2 42,6 22,18" fill="#c0392f"/>
+    <polygon points="22,26 42,14 42,22 22,34" fill="#c0392f"/>
+    <polygon points="22,42 42,30 42,38 22,50" fill="#c0392f"/>
+    <polygon points="22,58 42,46 42,54 22,66" fill="#c0392f"/>
+  </g>
+  <rect x="19" y="8" width="26" height="6" rx="3" fill="#d2a85a"/>
+  <rect x="19" y="50" width="26" height="6" rx="3" fill="#d2a85a"/>
+</svg>

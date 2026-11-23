@@ -1,0 +1,18 @@
+{
+  "name": "barber-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Демо: лендінг барбершопу на Cloudflare Pages + форма заявки в Telegram",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "photos": "node scripts/photos.mjs",
+    "test": "node scripts/test-lead.mjs",
+    "deploy": "wrangler pages deploy public --project-name barber-landing"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.0",
+    "wrangler": "^4.166.0"
+  },
+  "engines": { "node": ">=20.6" }
+}

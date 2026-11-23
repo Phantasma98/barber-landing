@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Барбершоп «Демо» — стрижки в Києві та запис у Telegram</title>
+  <meta name="description" content="Демо-сайт барбершопу: чоловічі й дитячі стрижки, борода, ціни від 250 ₴. Запис за хвилину в Telegram-боті з нагадуванням за 2 години. Вигаданий заклад — приклад «сайт + бот під ключ».">
+  <link rel="canonical" href="https://barber.soniqcloud.com/">
+  <meta name="theme-color" content="#0f0e0c">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="Барбершоп «Демо»">
+  <meta property="og:title" content="Барбершоп «Демо» — стрижки в Києві та запис у Telegram">
+  <meta property="og:description" content="Оберіть послугу, день і час у Telegram-боті — запис за хвилину, нагадування за 2 години. Демо-проєкт: сайт + бот запису під ключ.">
+  <meta property="og:url" content="https://barber.soniqcloud.com/">
+  <meta property="og:image" content="https://barber.soniqcloud.com/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Барбершоп «Демо» — барберські крісла біля цегляної стіни та напис «Стрижка. Запис за хвилину»">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/fonts/oswald-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/oswald-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BarberShop",
+      "@id": "https://barber.soniqcloud.com/#barbershop",
+      "name": "Барбершоп «Демо»",
+      "description": "Демо-проєкт: вигаданий барбершоп для портфоліо. Чоловічі й дитячі стрижки, борода, запис онлайн у Telegram-боті. Назва, адреса та ціни ненастоящі.",
+      "disambiguatingDescription": "Демо-проєкт. Реального закладу не існує; адреса й ціни вигадані.",
+      "url": "https://barber.soniqcloud.com/",
+      "image": "https://barber.soniqcloud.com/img/og.jpg",
+      "inLanguage": "uk",
+      "priceRange": "250–600 ₴",
+      "currenciesAccepted": "UAH",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "вул. Демонстраційна, 1 (вигадана адреса)",
+        "addressLocality": "Київ",
+        "addressCountry": "UA"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "10:00",
+          "closes": "20:00"
+        }
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "name": "Записатися в Telegram",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://t.me/barber_example1_bot",
+          "actionPlatform": [
+            "http://schema.org/MobileWebPlatform",
+            "http://schema.org/DesktopWebPlatform"
+          ]
+        },
+        "result": {
+          "@type": "Reservation",
+          "name": "Запис до барбера"
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Послуги та ціни",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "priceCurrency": "UAH",
+            "price": "400",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Чоловіча стрижка"
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "UAH",
+            "price": "250",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Стрижка бороди"
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "UAH",
+            "price": "600",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Стрижка + борода"
+            }
+          },
+          {
+            "@type": "Offer",
+            "priceCurrency": "UAH",
+            "price": "300",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Дитяча стрижка"
+            }
+          }
+        ]
+      }
+    }
+  </script>
+</head>
+<body>
+  <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
+    <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.9 4.3 18.7 19.5c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L5.1 12.9.2 11.4c-1.1-.3-1.1-1.1.2-1.6L20.1 2.4c.9-.3 1.7.2 1.8 1.9Z"/></symbol>
+    <symbol id="i-pole" viewBox="0 0 64 64"><defs><clipPath id="pole-clip"><rect x="22" y="12" width="20" height="40" rx="3"/></clipPath></defs><g clip-path="url(#pole-clip)"><rect x="22" y="12" width="20" height="40" fill="#f1ebe0"/><polygon points="22,10 42,-2 42,6 22,18" fill="#c0392f"/><polygon points="22,26 42,14 42,22 22,34" fill="#c0392f"/><polygon points="22,42 42,30 42,38 22,50" fill="#c0392f"/><polygon points="22,58 42,46 42,54 22,66" fill="#c0392f"/></g><rect x="19" y="8" width="26" height="6" rx="3" fill="#d2a85a"/><rect x="19" y="50" width="26" height="6" rx="3" fill="#d2a85a"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Перейти до змісту</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Барбершоп «Демо» — на початок">
+        <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#i-pole"/></svg>
+        <span>Барбершоп «Демо»</span>
+      </a>
+      <nav class="nav" aria-label="Розділи сайту">
+        <a href="#poslugy">Послуги</a>
+        <a href="#yak-zapysatysya">Як записатися</a>
+        <a href="#galereya">Галерея</a>
+        <a href="#kontakty">Контакти</a>
+      </nav>
+      <a class="btn btn-primary header-cta" href="https://t.me/barber_example1_bot"><svg aria-hidden="true" focusable="false"><use href="#i-tg"/></svg><span>Запис<span class="long">атися</span></span></a>
+    </div>
+  </header>
+  <div class="pole-bar" aria-hidden="true"></div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero-media">
+      <source media="(max-width: 699px)" type="image/avif" srcset="/img/hero-tall-480.avif 480w, /img/hero-tall-800.avif 800w" sizes="100vw">
+      <source media="(max-width: 699px)" type="image/webp" srcset="/img/hero-tall-480.webp 480w, /img/hero-tall-800.webp 800w" sizes="100vw">
+      <source media="(max-width: 699px)" srcset="/img/hero-tall-480.jpg 480w, /img/hero-tall-800.jpg 800w" sizes="100vw">
+      <source type="image/avif" srcset="/img/hero-wide-1024.avif 1024w, /img/hero-wide-1600.avif 1600w, /img/hero-wide-2200.avif 2200w" sizes="100vw">
+      <source type="image/webp" srcset="/img/hero-wide-1024.webp 1024w, /img/hero-wide-1600.webp 1600w, /img/hero-wide-2200.webp 2200w" sizes="100vw">
+        <img src="/img/hero-wide-1600.jpg" srcset="/img/hero-wide-1024.jpg 1024w, /img/hero-wide-1600.jpg 1600w, /img/hero-wide-2200.jpg 2200w" sizes="100vw" width="1600" height="900" alt="" fetchpriority="high" decoding="async">
+      </picture>
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Київ · Демо-проєкт</p>
+        <h1 id="hero-title">Стрижка, <em>яку видно.</em> Запис за хвилину.</h1>
+        <p class="hero-lead">Чоловічі та дитячі стрижки, акуратна борода. Оберіть послугу, день і час просто в Telegram — без дзвінків і очікування на лінії.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="hero-cta" href="https://t.me/barber_example1_bot"><svg aria-hidden="true" focusable="false"><use href="#i-tg"/></svg><span>Записатися в Telegram</span></a>
+          <a class="btn btn-ghost" href="#zayavka">Залишити заявку</a>
+        </div>
+        <ul class="hero-facts">
+          <li><span class="status-pill" id="open-now" data-state="unknown"><span class="dot" aria-hidden="true"></span><span id="open-now-text">Вт–Нд, 10:00–20:00</span></span></li>
+          <li>Стрижки від <strong>250 ₴</strong></li>
+          <li>Нагадування за <strong>2 години</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="poslugy" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Прайс</p>
+          <h2 id="services-title">Послуги та ціни</h2>
+        </div>
+        <ul class="services">
+          <li class="service"><h3>Чоловіча стрижка</h3><p class="meta">45 хв</p><p class="price">400<span>₴</span></p></li>
+          <li class="service"><h3>Стрижка бороди</h3><p class="meta">30 хв</p><p class="price">250<span>₴</span></p></li>
+          <li class="service"><h3>Стрижка + борода <span class="tag">−50 ₴ проти окремих</span></h3><p class="meta">75 хв</p><p class="price">600<span>₴</span></p></li>
+          <li class="service"><h3>Дитяча стрижка</h3><p class="meta">30 хв</p><p class="price">300<span>₴</span></p></li>
+        </ul>
+        <p class="note">Ціни й тривалість — ті самі, що в Telegram-боті. Демо: заклад і прайс вигадані.</p>
+        <div class="section-cta">
+          <a class="btn btn-primary" href="https://t.me/barber_example1_bot"><svg aria-hidden="true" focusable="false"><use href="#i-tg"/></svg><span>Записатися в Telegram</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="yak-zapysatysya" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Три кроки</p>
+          <h2 id="how-title">Як записатися</h2>
+          <p>Без реєстрацій і паролів: усе відбувається в чаті з ботом, кнопками.</p>
+        </div>
+        <ol class="steps">
+          <li class="step"><h3>Оберіть послугу</h3><p>Стрижка, борода, комбо чи дитяча стрижка. Ціна й тривалість видно одразу.</p></li>
+          <li class="step"><h3>Виберіть день і час</h3><p>Бот показує лише справді вільні години на найближчі 7 днів — без «передзвонимо й уточнимо».</p></li>
+          <li class="step"><h3>Отримайте нагадування</h3><p>Майстер підтверджує запис, а за 2 години до візиту бот нагадає про нього. Скасувати можна там само.</p></li>
+        </ol>
+        <div class="section-cta">
+          <a class="btn btn-dark" href="https://t.me/barber_example1_bot"><svg aria-hidden="true" focusable="false"><use href="#i-tg"/></svg><span>Відкрити бота</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="galereya" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Атмосфера</p>
+          <h2 id="gallery-title">Галерея</h2>
+        </div>
+        <div class="gallery">
+      <figure>
+        <picture>
+          <source type="image/avif" srcset="/img/razor-480.avif 480w, /img/razor-800.avif 800w, /img/razor-1200.avif 1200w" sizes="(min-width: 900px) 25vw, 50vw">
+          <source type="image/webp" srcset="/img/razor-480.webp 480w, /img/razor-800.webp 800w, /img/razor-1200.webp 1200w" sizes="(min-width: 900px) 25vw, 50vw">
+          <img src="/img/razor-800.jpg" srcset="/img/razor-480.jpg 480w, /img/razor-800.jpg 800w, /img/razor-1200.jpg 1200w" sizes="(min-width: 900px) 25vw, 50vw" width="800" height="1000" alt="Барбер оформлює бороду та скроню гострою бритвою" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure>
+        <picture>
+          <source type="image/avif" srcset="/img/scissors-480.avif 480w, /img/scissors-800.avif 800w, /img/scissors-1200.avif 1200w" sizes="(min-width: 900px) 25vw, 50vw">
+          <source type="image/webp" srcset="/img/scissors-480.webp 480w, /img/scissors-800.webp 800w, /img/scissors-1200.webp 1200w" sizes="(min-width: 900px) 25vw, 50vw">
+          <img src="/img/scissors-800.jpg" srcset="/img/scissors-480.jpg 480w, /img/scissors-800.jpg 800w, /img/scissors-1200.jpg 1200w" sizes="(min-width: 900px) 25vw, 50vw" width="800" height="1000" alt="Майстер підрізає волосся клієнта ножицями й гребінцем" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure class="wide">
+        <picture>
+          <source type="image/avif" srcset="/img/tools-480.avif 480w, /img/tools-800.avif 800w, /img/tools-1200.avif 1200w" sizes="(min-width: 900px) 50vw, 100vw">
+          <source type="image/webp" srcset="/img/tools-480.webp 480w, /img/tools-800.webp 800w, /img/tools-1200.webp 1200w" sizes="(min-width: 900px) 50vw, 100vw">
+          <img src="/img/tools-800.jpg" srcset="/img/tools-480.jpg 480w, /img/tools-800.jpg 800w, /img/tools-1200.jpg 1200w" sizes="(min-width: 900px) 50vw, 100vw" width="1200" height="800" alt="Машинки для стрижки, ножиці, гребінець і засоби для догляду на дерев’яному столі" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure class="wide">
+        <picture>
+          <source type="image/avif" srcset="/img/shave-480.avif 480w, /img/shave-800.avif 800w, /img/shave-1200.avif 1200w" sizes="(min-width: 900px) 50vw, 100vw">
+          <source type="image/webp" srcset="/img/shave-480.webp 480w, /img/shave-800.webp 800w, /img/shave-1200.webp 1200w" sizes="(min-width: 900px) 50vw, 100vw">
+          <img src="/img/shave-800.jpg" srcset="/img/shave-480.jpg 480w, /img/shave-800.jpg 800w, /img/shave-1200.jpg 1200w" sizes="(min-width: 900px) 50vw, 100vw" width="1200" height="800" alt="Клієнт відкинувся в кріслі, барбер працює над бородою" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure>
+        <picture>
+          <source type="image/avif" srcset="/img/chair-480.avif 480w, /img/chair-800.avif 800w, /img/chair-1200.avif 1200w" sizes="(min-width: 900px) 25vw, 50vw">
+          <source type="image/webp" srcset="/img/chair-480.webp 480w, /img/chair-800.webp 800w, /img/chair-1200.webp 1200w" sizes="(min-width: 900px) 25vw, 50vw">
+          <img src="/img/chair-800.jpg" srcset="/img/chair-480.jpg 480w, /img/chair-800.jpg 800w, /img/chair-1200.jpg 1200w" sizes="(min-width: 900px) 25vw, 50vw" width="800" height="1000" alt="Шкіряне барберське крісло в напівтемному залі" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+      <figure>
+        <picture>
+          <source type="image/avif" srcset="/img/row-480.avif 480w, /img/row-800.avif 800w, /img/row-1200.avif 1200w" sizes="(min-width: 900px) 25vw, 50vw">
+          <source type="image/webp" srcset="/img/row-480.webp 480w, /img/row-800.webp 800w, /img/row-1200.webp 1200w" sizes="(min-width: 900px) 25vw, 50vw">
+          <img src="/img/row-800.jpg" srcset="/img/row-480.jpg 480w, /img/row-800.jpg 800w, /img/row-1200.jpg 1200w" sizes="(min-width: 900px) 25vw, 50vw" width="800" height="1000" alt="Ряд барберських крісел перед дзеркалами під підвісними лампами" loading="lazy" decoding="async">
+        </picture>
+      </figure>
+        </div>
+        <p class="gallery-note">Фото — ілюстративні, з Unsplash. Це не фото реального закладу.</p>
+      </div>
+    </section>
+
+    <section class="section" id="kontakty" aria-labelledby="contacts-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Контакти</p>
+          <h2 id="contacts-title">Приходьте. Або напишіть</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Години й адреса</h3>
+            <dl class="hours">
+              <dt>Години роботи</dt>
+              <dd class="big">Вт–Нд, 10:00–20:00</dd>
+              <dd>Понеділок — вихідний</dd>
+              <dd><span class="status-pill" id="open-now-2" data-state="unknown"><span class="dot" aria-hidden="true"></span><span id="open-now-text-2"></span></span></dd>
+              <dt>Адреса</dt>
+              <dd><address>м. Київ, вул. Демонстраційна, 1<br><span class="fake">вигадана адреса: такого закладу не існує</span></address></dd>
+              <dt>Запис</dt>
+              <dd>У Telegram-боті — у будь-який час; або залиште заявку в формі.</dd>
+            </dl>
+            <div class="card-links">
+              <a class="btn btn-primary" href="https://t.me/barber_example1_bot"><svg aria-hidden="true" focusable="false"><use href="#i-tg"/></svg><span>Записатися в Telegram</span></a>
+            </div>
+          </div>
+
+          <div class="card" id="zayavka">
+            <h3 id="form-title">Залишити заявку</h3>
+            <form class="form" id="lead-form" action="/api/lead" method="post" aria-labelledby="form-title">
+              <p class="form-note">Не любите месенджери? Залиште номер і зручний час — майстер звʼяжеться з вами.</p>
+              <div class="field">
+                <label for="f-name">Імʼя</label>
+                <input id="f-name" name="name" type="text" autocomplete="given-name" required minlength="2" maxlength="40" aria-describedby="e-name">
+                <p class="field-error" id="e-name" hidden></p>
+              </div>
+              <div class="field">
+                <label for="f-phone">Телефон</label>
+                <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+380 67 123 45 67" required maxlength="25" aria-describedby="e-phone">
+                <p class="field-error" id="e-phone" hidden></p>
+              </div>
+              <div class="field">
+                <label for="f-comment">Бажаний час або коментар <span class="opt">(необовʼязково)</span></label>
+                <textarea id="f-comment" name="comment" rows="3" maxlength="300" placeholder="Наприклад: субота після 15:00, стрижка + борода" aria-describedby="e-comment"></textarea>
+                <p class="field-error" id="e-comment" hidden></p>
+              </div>
+              <div class="hp" aria-hidden="true">
+                <label for="f-website">Не заповнюйте це поле</label>
+                <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
+              <input type="hidden" name="fill_ms" id="f-fill" value="">
+              <button class="btn btn-primary" type="submit" id="submit-btn">Надіслати заявку</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+              <p class="form-note">Це демо: заявка надходить власнику бота в Telegram. Дані використовуються лише щоб звʼязатися з вами.</p>
+            </form>
+            <div class="form-success" id="form-success" tabindex="-1" hidden>
+              <h3>Дякуємо! Заявку отримано</h3>
+              <p>Майстер зателефонує або напише найближчим часом. А якщо хочете записатися просто зараз — бот приймає записи в будь-який час.</p>
+              <div class="card-links">
+                <a class="btn btn-primary" href="https://t.me/barber_example1_bot"><svg aria-hidden="true" focusable="false"><use href="#i-tg"/></svg><span>Записатися в Telegram</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Відповіді</p>
+          <h2 id="faq-title">Часті запитання</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Чи потрібен Telegram, щоб записатися?</summary>
+            <div class="answer"><p>Найшвидше — через бота в Telegram. Якщо його немає, залиште заявку у формі вище: майстер зателефонує чи напише.</p></div>
+          </details>
+          <details>
+            <summary>Як скасувати або змінити запис?</summary>
+            <div class="answer"><p>У боті відкрийте «Мої записи»: там список майбутніх візитів зі скасуванням. Щоб змінити час, скасуйте запис і виберіть новий.</p></div>
+          </details>
+          <details>
+            <summary>Коли приходить нагадування?</summary>
+            <div class="answer"><p>За 2 години до візиту бот надішле повідомлення в чат.</p></div>
+          </details>
+          <details>
+            <summary>На скільки днів уперед можна записатися?</summary>
+            <div class="answer"><p>На найближчі 7 днів, включно з сьогодні. Бот показує лише вільні години й не пропонує понеділок: це вихідний.</p></div>
+          </details>
+          <details>
+            <summary>Це справжній барбершоп?</summary>
+            <div class="answer"><p>Ні, це демо-проєкт: назва, адреса, ціни й фото ілюстративні. Мета — показати, як виглядає сайт разом із Telegram-ботом запису. <a href="https://github.com/Phantasma98/barber-booking-bot">Код бота відкритий на GitHub</a>.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="demo-note"><strong>Демо-проєкт.</strong> Барбершоп «Демо», адреса, ціни та фото вигадані чи ілюстративні; реального закладу не існує. Це приклад пакета «сайт + Telegram-бот запису під ключ».</p>
+      <nav class="footer-links" aria-label="Посилання проєкту">
+        <a href="https://t.me/barber_example1_bot">Бот @barber_example1_bot</a>
+        <a href="https://github.com/Phantasma98/barber-booking-bot">Код бота на GitHub</a>
+      </nav>
+      <p class="credits">Фото: <a href="https://unsplash.com/license">Unsplash</a> — Nathon Oski, Agustin Fernandez, Nate Johnston, Andrea Donato, Joshua Lawrence, Jason Leung, Allef Vinicius.</p>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" id="sticky-cta">
+    <a class="btn btn-primary" href="https://t.me/barber_example1_bot"><svg aria-hidden="true" focusable="false"><use href="#i-tg"/></svg><span>Записатися в Telegram</span></a>
+  </div>
+</body>
+</html>

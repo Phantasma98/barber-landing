@@ -1,0 +1,9 @@
+# Скопіюйте у .dev.vars (файл у .gitignore) і заповніть. Для деплою ті самі значення
+# задаються як секрети Pages-проєкту (див. README).
+
+# Токен бота @barber_example1_bot від @BotFather — той самий, що й у barber-bot
+BOT_TOKEN=123456:ABC-your-bot-token
+# Telegram chat id власника (дізнатися: @userinfobot). Сюди приходитимуть заявки з форми
+OWNER_CHAT_ID=
+# Необов'язково: інша адреса Telegram API (для локального тестування з моком)
+# TELEGRAM_API_BASE=http://127.0.0.1:8788
